@@ -1,0 +1,29 @@
+PODS:
+  - cocore (1.2.6)
+  - cokit (1.2.6):
+    - coobjc (~> 1.2.0)
+  - coobjc (1.2.0):
+    - cocore (~> 1.2.0)
+  - coswift (1.2.5):
+    - cocore (~> 1.2.5)
+
+DEPENDENCIES:
+  - cokit
+  - coswift
+
+SPEC REPOS:
+  trunk:
+    - cocore
+    - cokit
+    - coobjc
+    - coswift
+
+SPEC CHECKSUMS:
+  cocore: d6abaa4dd8c15115290362b9accbb42cc2bce9a0
+  cokit: fbfad971c6aff7cf67f9e1b292aa43bc051c08fd
+  coobjc: 090a460e32e90d0e820e64c31cf7b79dece51a7c
+  coswift: 1ab02b4ed647cce3e6315dc56ac9bbe9b0e634a2
+
+PODFILE CHECKSUM: 42cb97798f9f286ce96ada4725ae07f51f4aa6f4
+
+COCOAPODS: 1.9.1

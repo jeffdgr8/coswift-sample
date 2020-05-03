@@ -3,29 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BE52699453511F47F8BA1CC /* Pods_Coroutine_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D013A4CE4464D6A3B2846896 /* Pods_Coroutine_Sample.framework */; };
 		1FA69B0A245CA9CC0073DD69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA69B09245CA9CC0073DD69 /* AppDelegate.swift */; };
 		1FA69B0C245CA9CC0073DD69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA69B0B245CA9CC0073DD69 /* SceneDelegate.swift */; };
-		1FA69B0E245CA9CC0073DD69 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA69B0D245CA9CC0073DD69 /* FirstViewController.swift */; };
-		1FA69B10245CA9CC0073DD69 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA69B0F245CA9CC0073DD69 /* SecondViewController.swift */; };
+		1FA69B0E245CA9CC0073DD69 /* CallbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA69B0D245CA9CC0073DD69 /* CallbackViewController.swift */; };
+		1FA69B10245CA9CC0073DD69 /* CoroutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA69B0F245CA9CC0073DD69 /* CoroutineViewController.swift */; };
 		1FA69B13245CA9CC0073DD69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA69B11245CA9CC0073DD69 /* Main.storyboard */; };
 		1FA69B15245CA9CE0073DD69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA69B14245CA9CE0073DD69 /* Assets.xcassets */; };
 		1FA69B18245CA9CE0073DD69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA69B16245CA9CE0073DD69 /* LaunchScreen.storyboard */; };
+		1FA69B21245CDC760073DD69 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA69B20245CDC760073DD69 /* Pokemon.swift */; };
+		1FA69B23245CE8B10073DD69 /* CoroutinePokeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA69B22245CE8B10073DD69 /* CoroutinePokeApi.swift */; };
+		1FA69B25245D091A0073DD69 /* CallbackPokeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA69B24245D091A0073DD69 /* CallbackPokeApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FA69B06245CA9CC0073DD69 /* Coroutine Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coroutine Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA69B09245CA9CC0073DD69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FA69B0B245CA9CC0073DD69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FA69B0D245CA9CC0073DD69 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1FA69B0F245CA9CC0073DD69 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1FA69B0D245CA9CC0073DD69 /* CallbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackViewController.swift; sourceTree = "<group>"; };
+		1FA69B0F245CA9CC0073DD69 /* CoroutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoroutineViewController.swift; sourceTree = "<group>"; };
 		1FA69B12245CA9CC0073DD69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FA69B14245CA9CE0073DD69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FA69B17245CA9CE0073DD69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FA69B19245CA9CE0073DD69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA69B20245CDC760073DD69 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		1FA69B22245CE8B10073DD69 /* CoroutinePokeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoroutinePokeApi.swift; sourceTree = "<group>"; };
+		1FA69B24245D091A0073DD69 /* CallbackPokeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackPokeApi.swift; sourceTree = "<group>"; };
+		3106FB3E00EA74E3927AF2E1 /* Pods-Coroutine Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coroutine Sample.debug.xcconfig"; path = "Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		D013A4CE4464D6A3B2846896 /* Pods_Coroutine_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coroutine_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F541FF8CAAB0E425BA3AAEF3 /* Pods-Coroutine Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coroutine Sample.release.xcconfig"; path = "Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE52699453511F47F8BA1CC /* Pods_Coroutine_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				1FA69B08245CA9CC0073DD69 /* Coroutine Sample */,
 				1FA69B07245CA9CC0073DD69 /* Products */,
+				56EF84DD9E4CEE5987D38FE6 /* Pods */,
+				353315572302C35B34BFECDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +71,44 @@
 		1FA69B08245CA9CC0073DD69 /* Coroutine Sample */ = {
 			isa = PBXGroup;
 			children = (
+				1FA69B1F245CDC3F0073DD69 /* PokeAPI */,
 				1FA69B09245CA9CC0073DD69 /* AppDelegate.swift */,
 				1FA69B0B245CA9CC0073DD69 /* SceneDelegate.swift */,
-				1FA69B0D245CA9CC0073DD69 /* FirstViewController.swift */,
-				1FA69B0F245CA9CC0073DD69 /* SecondViewController.swift */,
+				1FA69B0D245CA9CC0073DD69 /* CallbackViewController.swift */,
+				1FA69B0F245CA9CC0073DD69 /* CoroutineViewController.swift */,
 				1FA69B11245CA9CC0073DD69 /* Main.storyboard */,
 				1FA69B14245CA9CE0073DD69 /* Assets.xcassets */,
 				1FA69B16245CA9CE0073DD69 /* LaunchScreen.storyboard */,
 				1FA69B19245CA9CE0073DD69 /* Info.plist */,
 			);
 			path = "Coroutine Sample";
+			sourceTree = "<group>";
+		};
+		1FA69B1F245CDC3F0073DD69 /* PokeAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1FA69B24245D091A0073DD69 /* CallbackPokeApi.swift */,
+				1FA69B22245CE8B10073DD69 /* CoroutinePokeApi.swift */,
+				1FA69B20245CDC760073DD69 /* Pokemon.swift */,
+			);
+			path = PokeAPI;
+			sourceTree = "<group>";
+		};
+		353315572302C35B34BFECDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D013A4CE4464D6A3B2846896 /* Pods_Coroutine_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56EF84DD9E4CEE5987D38FE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3106FB3E00EA74E3927AF2E1 /* Pods-Coroutine Sample.debug.xcconfig */,
+				F541FF8CAAB0E425BA3AAEF3 /* Pods-Coroutine Sample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FA69B1C245CA9CE0073DD69 /* Build configuration list for PBXNativeTarget "Coroutine Sample" */;
 			buildPhases = (
+				80A389C7137133E4AA8FBB39 /* [CP] Check Pods Manifest.lock */,
 				1FA69B02245CA9CC0073DD69 /* Sources */,
 				1FA69B03245CA9CC0073DD69 /* Frameworks */,
 				1FA69B04245CA9CC0073DD69 /* Resources */,
+				42BA91868A49CC22E928FF14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +179,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42BA91868A49CC22E928FF14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80A389C7137133E4AA8FBB39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coroutine Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1FA69B02245CA9CC0073DD69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA69B10245CA9CC0073DD69 /* SecondViewController.swift in Sources */,
-				1FA69B0E245CA9CC0073DD69 /* FirstViewController.swift in Sources */,
+				1FA69B21245CDC760073DD69 /* Pokemon.swift in Sources */,
+				1FA69B25245D091A0073DD69 /* CallbackPokeApi.swift in Sources */,
+				1FA69B10245CA9CC0073DD69 /* CoroutineViewController.swift in Sources */,
+				1FA69B0E245CA9CC0073DD69 /* CallbackViewController.swift in Sources */,
 				1FA69B0A245CA9CC0073DD69 /* AppDelegate.swift in Sources */,
 				1FA69B0C245CA9CC0073DD69 /* SceneDelegate.swift in Sources */,
+				1FA69B23245CE8B10073DD69 /* CoroutinePokeApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +374,7 @@
 		};
 		1FA69B1D245CA9CE0073DD69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3106FB3E00EA74E3927AF2E1 /* Pods-Coroutine Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +392,7 @@
 		};
 		1FA69B1E245CA9CE0073DD69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F541FF8CAAB0E425BA3AAEF3 /* Pods-Coroutine Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

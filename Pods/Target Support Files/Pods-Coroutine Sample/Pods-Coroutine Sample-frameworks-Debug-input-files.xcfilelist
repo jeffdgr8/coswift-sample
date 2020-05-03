@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/cocore/cocore.framework
+${BUILT_PRODUCTS_DIR}/cokit/cokit.framework
+${BUILT_PRODUCTS_DIR}/coobjc/coobjc.framework
+${BUILT_PRODUCTS_DIR}/coswift/coswift.framework

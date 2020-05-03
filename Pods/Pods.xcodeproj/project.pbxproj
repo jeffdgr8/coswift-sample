@@ -1,0 +1,1541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0027D255FA3001DC8BF730D7EF956836 /* COActorCompletable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B9731C994191F2819C84B967D37116B /* COActorCompletable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		090616495423C65A1E520A37D1062580 /* UIImage+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = C8172F7AC3E2FB6021A053BBB2BCED8A /* UIImage+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B9EFDDA5BF7BE4E1B668C9C14222BA1 /* NSKeyedArchiver+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 80533598E96AD9B97589DAB59B97E73E /* NSKeyedArchiver+Coroutine.m */; };
+		0E7A8256A225A82A6BD7A05BAAC4C46F /* CODispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 767D97E31241FF31A73D654333166C91 /* CODispatch.m */; };
+		0F9D247869E56D9A0E90C4CCEBC5418C /* cofishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8AA81F3C2AB5A00C7A381991969E32 /* cofishhook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		102AA0D75769EE09AB510CD3AAD1A0C1 /* co_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE53E83BA3F6133A3E9ACD528FD77B3 /* co_errors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1194FD3620FACC4C1B8D7C3A41174342 /* COActor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BD516AF19D5D594EE3999AE795AF1B5 /* COActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13920398512771628288F3B66F8FF5F3 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C163B8E9DCF41D4F413059E25A954D /* Promise.swift */; };
+		14997EE93F0AE3DF0C012D8A8ADEFB8D /* coobjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709FFDD6613843C78E3785BCBACF700F /* coobjc.framework */; };
+		16A59642B0E1ACE46138C37F81D0B769 /* coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C64D89ED7488BBC088D95EE8F7AA35 /* coroutine.m */; };
+		16D05F42357D97DA8B768367F4C6E362 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386E749C81495E6169733E967B25B20 /* Foundation.framework */; };
+		1C8DD3B3619B948FD2585DD2A297C324 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386E749C81495E6169733E967B25B20 /* Foundation.framework */; };
+		203B36DE9570EFF4377626370D3FA49B /* coroutine_context.m in Sources */ = {isa = PBXBuildFile; fileRef = A82AD308A998C09091539B93FCED55EB /* coroutine_context.m */; };
+		21C22CCA693DD82CF286B94150E047DD /* UIAlertController+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4679E09D5E224DED4F259DCDC3F1AB3 /* UIAlertController+Coroutine.m */; };
+		2855BED7295707329F0310793D9D295D /* NSFileManager+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA47564848438880659527A21CFE893 /* NSFileManager+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		296EA806B0A737DC6527331B8598F504 /* UIApplication+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8153C1EA5838E17D8FF42332F7D597C6 /* UIApplication+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CA25E69BEAFA9E374A189891DE4ED59 /* co_queue.h in Headers */ = {isa = PBXBuildFile; fileRef = F5325AC03D9406C5953B0E3D563B98B5 /* co_queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30CC67F970E32C4C39C2677526FD9EB9 /* UIApplication+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD26E4A572843C3F81075B8F5F1D340 /* UIApplication+Coroutine.m */; };
+		30E5BF90015E24AA3E198DF8F966C304 /* COActorCompletable.m in Sources */ = {isa = PBXBuildFile; fileRef = 746A70D4F1C9EC6290375A32C4B65A6F /* COActorCompletable.m */; };
+		37270A99381E20C0C59F5C672C4C55BC /* NSKeyedArchiver+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F6E4A32FA2E84779E54DB2A4ED49F3 /* NSKeyedArchiver+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E99F8DC737AD15EA42A4DF6B57FB542 /* Pods-Coroutine Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE07D0D7DD1905384EC1FC7095FAC134 /* Pods-Coroutine Sample-dummy.m */; };
+		41764A3B0693BA0F684068FA0AE464DD /* coswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D91F36DDAAA59A2D9DD83551984B743 /* coswift.swift */; };
+		49EF27DA3712FF93151ACF5919CBE4FC /* COActorMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 054E051FA215593A3DCFDCE42C740ACF /* COActorMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ABF80704EC363C6C2D03694016740F8 /* cokit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 018649C48CDAB1401DA9356EE64314B2 /* cokit-dummy.m */; };
+		4B7A3C3EB41EA1C67B53E5CFB2BD9BEB /* co_csp.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B2941481BD4497DFB8606DE298F00D /* co_csp.m */; };
+		528D1A693646666F3C988E55E8E0BEDA /* coobjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26928CE9FD72C8828F57A36583BECD3A /* coobjc-dummy.m */; };
+		55B1E37A5C7FDE49EF3DD74C25E6AC82 /* coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB3496DD6A9711842F4EA24D4A9999C /* coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		573A3EFD55CCBF4EA8548C19A13DDF25 /* NSUserDefaults+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBE99AB15DFB7820006505CB030D8B /* NSUserDefaults+Coroutine.m */; };
+		592262F2F1406815A7D370089ADD3EC3 /* CODispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CA8AEF7767366039DE761228EF3123 /* CODispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59DBF05026EFC3D4CD5147C9BF77986D /* NSUserDefaults+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A65A6BD68EE9C9B2AEF8CD2B4AEDF39 /* NSUserDefaults+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BD9031BD06EAE051323F4027BA3DA62 /* NSURLSession+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F1A5A004C1381976B335A7CDBDB5F5 /* NSURLSession+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E9A2A597014DA296915E6143C23FB9B /* NSPropertyList+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 44C379D905F7E761150BBA833D728033 /* NSPropertyList+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6628993369E2F9E8ED4EFB9FDBA127EF /* NSXMLParser+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C139F7377498E2D0029F502173171D /* NSXMLParser+Coroutine.m */; };
+		6791CBB1D0773E6AE86602D56C9255BA /* co_queuedebugging_support.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F8CCFBC7A9AFD2FCD5E26DC5BF916 /* co_queuedebugging_support.m */; };
+		6C7EA2936E091B6F5A0FB46AACEE1A92 /* NSURLConnection+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A8DA9A1D2D0C53EF80C8681CFE9A6 /* NSURLConnection+Coroutine.m */; };
+		6DF06A4BDAC9223EA9127CAA235DECFE /* coswift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D85E053CD2B0E87B5C8F7EEB21F7E6AA /* coswift-dummy.m */; };
+		74CFDCBC8D3034C47B26F204A996D302 /* NSURLSession+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B486873265D27ABE6E14A150C9192 /* NSURLSession+Coroutine.m */; };
+		7ADE070401BB3F913D1BAA42CE02C469 /* NSBundle+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2307F63899100A9F68B905A0717CDFE6 /* NSBundle+Coroutine.m */; };
+		7C0FBE617AD93C5E63C50549A528AE88 /* co_csp.h in Headers */ = {isa = PBXBuildFile; fileRef = 6299525E310D59DDDB55909EB3860A9F /* co_csp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C0D2A17D82B950476143CF80AB46D5 /* co_tuple.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E739261233A0EC8276269BB48A3971 /* co_tuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80CED67BA665576CA1E724249C60D486 /* COGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA772205E14397E5D142C8B9DC50EBE /* COGenerator.m */; };
+		82E596958DA14B89B402A0E52D1A2279 /* NSString+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E22DAEC3C461A5D347FB42260C348CF /* NSString+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83FF296B89EF4B5E80425FCB90C473B8 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A93D761CF3CEC5711A8DDDFDAB0A8 /* Generator.swift */; };
+		8441AAF12EE6A1231E2BADC490C54FEE /* COPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8BE581E41C2D6036DC44DBF1725026 /* COPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86DCFFE2326CBDE9181191860EB829BC /* cokit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E859C37E0956EB987174AC37710BD2E2 /* cokit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		870D2E4E9DF32B47F2D2C0E4CEB3D392 /* COChan.m in Sources */ = {isa = PBXBuildFile; fileRef = E02E4D145F97839A76EB952CBB579BD6 /* COChan.m */; };
+		8821BB369EF49A2E95D71130E63271C7 /* cofishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EF62E996642E3E588AA036B31433470 /* cofishhook.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		88DA7C1026D0DFA61217BEF3B1955250 /* co_queuedebugging_support.h in Headers */ = {isa = PBXBuildFile; fileRef = CA07281069390FAEC00EA9CB9124A293 /* co_queuedebugging_support.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88FDFEF298475737EBDD3B48B5F5C5C5 /* cocore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA784EDCAA96FD145B6D8E9287A4A3A /* cocore.framework */; };
+		901BEB85B65940824850C6916C7B8172 /* NSArray+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1AA5AE383C36B8B472F63540750C0 /* NSArray+Coroutine.m */; };
+		909A146A57F54E0CCEBA2C81B4BD3BA4 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6002A488A69534D356B8ECC5C2A1796 /* Errors.swift */; };
+		9123B95293456F578B01C76ADDA2C70E /* COPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0ABDEF0BB2CD4DAC8778A0DD1D3C51 /* COPromise.m */; };
+		920A073B3A72C29C2ED43FB2F2FAEDF2 /* NSFileManager+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD2C3AEE9FCB18CB8B27CF295C95DA2 /* NSFileManager+Coroutine.m */; };
+		96063EF9D8AD02BC7AB20364940E14B0 /* co_tuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D16362981F5CEFEEC8FEA1A08C4D880 /* co_tuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		987103BDF14B3A8CFE0682358807FE88 /* Chan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD3D18EA4F635FECF0B8E9AD13FD09 /* Chan.swift */; };
+		99A4A9400724B272DAC9B06BBD6414BC /* NSData+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 345307A9E912BC8D533845F2A059A5CF /* NSData+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AA18B8A05D5B59854470F5201F95C97 /* NSDictionary+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = E75CEB7D50AFBEE94D46B52E8AF94DBC /* NSDictionary+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B0DF57EC8EAFEAB673F31D892E8D395 /* coswift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB01A81A6EEADFE75EB4BA98C1BCBD7 /* coswift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A138A44CF7D6A4E3BE4634241A5445BD /* cocore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA784EDCAA96FD145B6D8E9287A4A3A /* cocore.framework */; };
+		A4C03CE9458CA054723E705FC5CF084B /* co_autorelease.h in Headers */ = {isa = PBXBuildFile; fileRef = A561BE37DD90773C90C3EBB412A08E86 /* co_autorelease.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A60543E1203677BFCA3AB84BBF9B702F /* COChan.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A440CFE0C07827762B769C23E7E936 /* COChan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF740E6174E5FD0B78448AC80B07D23 /* cokit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DD5781C465BF5B3E73F76FDE6FC0EF8 /* cokit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABF3B75FB633660981F3F9C90B4F2218 /* co_queue.m in Sources */ = {isa = PBXBuildFile; fileRef = A064EE741B583DA0680354F0C6C2E423 /* co_queue.m */; };
+		ACB84251361184842D1E7354E0F895E1 /* Coroutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172ABAC00D1B375534D499E2B37984DC /* Coroutine.swift */; };
+		AE657E5A0678C1781EEAEF8C00075320 /* co_errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A42AACB7C772A5E54BE9DB6BD07594E /* co_errors.m */; };
+		AEE5BED0CDB772C7C5C3A8E38C66ABE8 /* NSJSONSerialization+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A2D9CEE4A576FC26BABFA909A602697 /* NSJSONSerialization+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B147BE8490DA381D990613493A7159EF /* UIAlertController+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD82A96773449574138E3952749EEEE /* UIAlertController+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B292F728AD65D56DB7AA41A92482A62A /* NSDictionary+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = B905C0050C81A687E46ADFFB2E26AE67 /* NSDictionary+Coroutine.m */; };
+		B3908E1B68E56EC46FE751A9D5528B05 /* COCoroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = EF932E1D6CFB543C14598B2182952C4E /* COCoroutine.m */; };
+		B6626B44AE991095F072520BD992151B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386E749C81495E6169733E967B25B20 /* Foundation.framework */; };
+		BAD003174B48B314691717B963C5EB74 /* COCoroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = D510CAEC3C1BDC8CA5664B33411E6C6D /* COCoroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB1E0E113E7FA0D51BD4955342EB974D /* NSURLConnection+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = E06C6EF6A684613DC7C123455140730C /* NSURLConnection+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB28601FA498243AD16B352DCF72D69C /* NSXMLParser+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 412CD8C3D1C2CFF89CE7C870E5FF0D61 /* NSXMLParser+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB98C0967EE8C215EF60C6E9E71F19FE /* NSString+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 846ED291709DD1A085534697BA9B8268 /* NSString+Coroutine.m */; };
+		BE8028F5B37D878B9EF2D57BDE2C4F90 /* NSBundle+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = AA216BD9E0017F6A24DBB0034EA42765 /* NSBundle+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2F38C2149A52F7030A1B88963476986 /* NSPropertyList+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D900E4C271C7DE6F9C21315E0D9E5 /* NSPropertyList+Coroutine.m */; };
+		C64787854DEBF3B5BEB41B8F39D0E71F /* coobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 396AE8736143D4385AE171C5CC832BF7 /* coobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C91EE60E1C130CF6CC59CD522FF04404 /* UIImage+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = F112BBEAB03E0DC643EA5D93517964D4 /* UIImage+Coroutine.m */; };
+		C940AB06BF359927FB2D210D196E42CB /* COActorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC53D450A75352D985C9DDE464DA6EB /* COActorMessage.m */; };
+		CBD6443D5C501D3864FB76E8F4406604 /* NSData+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4D8E2EA7A11287DC70AB8A4174AB55 /* NSData+Coroutine.m */; };
+		CDA961712E37E266B3CA8B470549305E /* NSJSONSerialization+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 389F5A5ED06B6007EDECF99653593207 /* NSJSONSerialization+Coroutine.m */; };
+		CE0FFF2FBE73DEC5C05F36B3DA2EB53B /* COKitCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = D3616A2216DCA5C349EFD69249958DF4 /* COKitCommon.m */; };
+		CE7FB40CD8FAF9A07BC979149B165B84 /* UIImagePickerController+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 33EFB927D731FF339B38525DDBB39B55 /* UIImagePickerController+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF48B5E67FDB74755C7FC5601EF04FA0 /* coswift.h in Headers */ = {isa = PBXBuildFile; fileRef = 55697742F41F6613BEBACE54BFF9B0A0 /* coswift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1A747EC58E34474AA6814182664F7EE /* coroutine_context.s in Sources */ = {isa = PBXBuildFile; fileRef = D79981682EE50D0738886B9B2BCF977E /* coroutine_context.s */; };
+		D1E5C27AE90C2C491CC6AF738FAFC2BC /* NSArray+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B11D9921D10A2629B54D494E458000 /* NSArray+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D273054FBDA439B9234A5932BE8B6F06 /* UIImagePickerController+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C96F4996FC81C16AFCB97836ED54E72 /* UIImagePickerController+Coroutine.m */; };
+		D363C06F8F1ED0789D2CB611E2D53E90 /* COGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FB8B819829386FA0783E709E8AC40AC /* COGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D52DDB6B9FDA7DEDBF0C08B535846E3A /* COActorChan.h in Headers */ = {isa = PBXBuildFile; fileRef = 7420BB9050232FA54501B01A8D348E5B /* COActorChan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D61B8CA96C9BF3D569F4936EF59EF61C /* co_autorelease.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1C4A85F0D17A70D9797E46BF14D2BF8 /* co_autorelease.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6C7A74E2F04C11F52764CF2E9C78261 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386E749C81495E6169733E967B25B20 /* Foundation.framework */; };
+		D84C0295A32BA0DE131A978C59D640C7 /* Pods-Coroutine Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF7C8D38C91758D0183E3C3C7291830F /* Pods-Coroutine Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8E85B643A93FE3C39FEFC83CC6DDD0A /* coroutine_context.h in Headers */ = {isa = PBXBuildFile; fileRef = 3794CC532D74699AF3472C3A0C914BA9 /* coroutine_context.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D91148528403D9BD2E2FE6CB12D156F8 /* UIVideoEditorController+Coroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 6600AA6AEA5DCB5BFE7361BB54CC78EA /* UIVideoEditorController+Coroutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0EB823D68C5B3EC79FA1E1293A3E480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386E749C81495E6169733E967B25B20 /* Foundation.framework */; };
+		E2E97F8A4353CB6D192816DB2B7DE43B /* COActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3555848518C663889A62A36BF0EC6523 /* COActor.m */; };
+		EEB89C54C1B5444EB52389342DC2599C /* cocore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC581A31BE47864FAF5703EFF764C37 /* cocore-dummy.m */; };
+		EFC9AA3DCA0ACFB15E186A5857485A40 /* COLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8F43FCBCED5A0659934CF2531AA45B /* COLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4285DA97E6C3A000531AD0A3B6FD591 /* cocore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F93288EEC733DD0BBB67DBC874181F7 /* cocore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F49402EFF59C71F2ECEDEEE7DCE7F9B9 /* COKitCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 733EE4F0DA0EB2E8804BC15EFAD86ADA /* COKitCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8BA19E1649428DEE5FBA0C9ACCE800C /* coobjc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD1F3EF8141C737D325E978136B5F53 /* coobjc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB888A7C153E0EA83034A61986A95946 /* COActorChan.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D29FA124A9DD993E8A665C9C85F79C0 /* COActorChan.m */; };
+		FBF4B955AFACC13A7CAD9815D0AE5892 /* cocore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4525F39559BEF71694686BC8269D4503 /* cocore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF02C4555C7644C1BBBC8AC32DF2673E /* UIVideoEditorController+Coroutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DA83B5ABFCC57E18D0819C4093CD80 /* UIVideoEditorController+Coroutine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10262F07C081BF9A6B3F42E3C0DCB615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1470988D9D5E0EBB0ABC8313894851A;
+			remoteInfo = coobjc;
+		};
+		137FE8ECF55AED0F15F9D6A146849CCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31EB174E297AAE291D844E1598635D15;
+			remoteInfo = cocore;
+		};
+		1A61B98A08F3B533BDCCCE2296DF266A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F86F09EE1F7E4F68AD495A31A38637F4;
+			remoteInfo = cokit;
+		};
+		5085E2CDAA0ED50CF0CFD8517521CB76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31EB174E297AAE291D844E1598635D15;
+			remoteInfo = cocore;
+		};
+		A9ACD4013E43DF47D25B9E36548E976B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1470988D9D5E0EBB0ABC8313894851A;
+			remoteInfo = coobjc;
+		};
+		BF4B5F88636AF4F8954EB81D6310C08E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9693734705F1057BFC8FB6B07BA32BF;
+			remoteInfo = coswift;
+		};
+		D723BE66A6D7B14D8915B235A40A63C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31EB174E297AAE291D844E1598635D15;
+			remoteInfo = cocore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00DA83B5ABFCC57E18D0819C4093CD80 /* UIVideoEditorController+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIVideoEditorController+Coroutine.m"; path = "cokit/cokit/UIKit/UIVideoEditorController+Coroutine.m"; sourceTree = "<group>"; };
+		018649C48CDAB1401DA9356EE64314B2 /* cokit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "cokit-dummy.m"; sourceTree = "<group>"; };
+		0457D0A0FD0F9ED1A0A5D47F0C3CCA2C /* cocore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cocore-prefix.pch"; sourceTree = "<group>"; };
+		054E051FA215593A3DCFDCE42C740ACF /* COActorMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COActorMessage.h; path = coobjc/actor/COActorMessage.h; sourceTree = "<group>"; };
+		08CA8AEF7767366039DE761228EF3123 /* CODispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CODispatch.h; path = cocore/CODispatch.h; sourceTree = "<group>"; };
+		0A42AACB7C772A5E54BE9DB6BD07594E /* co_errors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = co_errors.m; path = cocore/co_errors.m; sourceTree = "<group>"; };
+		0B9731C994191F2819C84B967D37116B /* COActorCompletable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COActorCompletable.h; path = coobjc/actor/COActorCompletable.h; sourceTree = "<group>"; };
+		0BB0375F48EBF1DEF90C14495DED7E31 /* Pods_Coroutine_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Coroutine_Sample.framework; path = "Pods-Coroutine Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBB7E07083F5372259C53B10869B593 /* coobjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = coobjc.release.xcconfig; sourceTree = "<group>"; };
+		0BD516AF19D5D594EE3999AE795AF1B5 /* COActor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COActor.h; path = coobjc/actor/COActor.h; sourceTree = "<group>"; };
+		0CAE12F80BCE4BA1E68D51DC7D477A77 /* cocore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = cocore.framework; path = cocore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC581A31BE47864FAF5703EFF764C37 /* cocore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "cocore-dummy.m"; sourceTree = "<group>"; };
+		0E22DAEC3C461A5D347FB42260C348CF /* NSString+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Coroutine.h"; path = "cokit/cokit/Foundation/NSString+Coroutine.h"; sourceTree = "<group>"; };
+		0F6B486873265D27ABE6E14A150C9192 /* NSURLSession+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+Coroutine.m"; path = "cokit/cokit/Foundation/NSURLSession+Coroutine.m"; sourceTree = "<group>"; };
+		10C139F7377498E2D0029F502173171D /* NSXMLParser+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSXMLParser+Coroutine.m"; path = "cokit/cokit/Foundation/NSXMLParser+Coroutine.m"; sourceTree = "<group>"; };
+		12D45211FA8E5957C8D98FFC18B0133A /* cocore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = cocore.modulemap; sourceTree = "<group>"; };
+		172ABAC00D1B375534D499E2B37984DC /* Coroutine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coroutine.swift; path = coswift/Coroutine.swift; sourceTree = "<group>"; };
+		1BE53E83BA3F6133A3E9ACD528FD77B3 /* co_errors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = co_errors.h; path = cocore/co_errors.h; sourceTree = "<group>"; };
+		1C96F4996FC81C16AFCB97836ED54E72 /* UIImagePickerController+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+Coroutine.m"; path = "cokit/cokit/UIKit/UIImagePickerController+Coroutine.m"; sourceTree = "<group>"; };
+		1D4DDCAAB3802F94EFDCFA46BB481E6F /* Pods-Coroutine Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coroutine Sample.release.xcconfig"; sourceTree = "<group>"; };
+		1FD541C1AA4ECB266DC050843CD20522 /* Pods-Coroutine Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Coroutine Sample-frameworks.sh"; sourceTree = "<group>"; };
+		2307F63899100A9F68B905A0717CDFE6 /* NSBundle+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+Coroutine.m"; path = "cokit/cokit/Foundation/NSBundle+Coroutine.m"; sourceTree = "<group>"; };
+		2386E749C81495E6169733E967B25B20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		26928CE9FD72C8828F57A36583BECD3A /* coobjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "coobjc-dummy.m"; sourceTree = "<group>"; };
+		2FAE0F67B8525A7EFC254B727B352190 /* coobjc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "coobjc-Info.plist"; sourceTree = "<group>"; };
+		33EFB927D731FF339B38525DDBB39B55 /* UIImagePickerController+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImagePickerController+Coroutine.h"; path = "cokit/cokit/UIKit/UIImagePickerController+Coroutine.h"; sourceTree = "<group>"; };
+		345307A9E912BC8D533845F2A059A5CF /* NSData+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Coroutine.h"; path = "cokit/cokit/Foundation/NSData+Coroutine.h"; sourceTree = "<group>"; };
+		3555848518C663889A62A36BF0EC6523 /* COActor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = COActor.m; path = coobjc/actor/COActor.m; sourceTree = "<group>"; };
+		36841950B74E73898712D66C12C3E395 /* Pods-Coroutine Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Coroutine Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3794CC532D74699AF3472C3A0C914BA9 /* coroutine_context.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coroutine_context.h; path = cocore/coroutine_context.h; sourceTree = "<group>"; };
+		389F5A5ED06B6007EDECF99653593207 /* NSJSONSerialization+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSJSONSerialization+Coroutine.m"; path = "cokit/cokit/Foundation/NSJSONSerialization+Coroutine.m"; sourceTree = "<group>"; };
+		396AE8736143D4385AE171C5CC832BF7 /* coobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coobjc.h; path = coobjc/coobjc.h; sourceTree = "<group>"; };
+		3D91F36DDAAA59A2D9DD83551984B743 /* coswift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = coswift.swift; path = coswift/coswift.swift; sourceTree = "<group>"; };
+		3DD5781C465BF5B3E73F76FDE6FC0EF8 /* cokit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cokit.h; path = cokit/cokit/cokit.h; sourceTree = "<group>"; };
+		412CD8C3D1C2CFF89CE7C870E5FF0D61 /* NSXMLParser+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSXMLParser+Coroutine.h"; path = "cokit/cokit/Foundation/NSXMLParser+Coroutine.h"; sourceTree = "<group>"; };
+		44C379D905F7E761150BBA833D728033 /* NSPropertyList+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPropertyList+Coroutine.h"; path = "cokit/cokit/Foundation/NSPropertyList+Coroutine.h"; sourceTree = "<group>"; };
+		4525F39559BEF71694686BC8269D4503 /* cocore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cocore-umbrella.h"; sourceTree = "<group>"; };
+		4CD82A96773449574138E3952749EEEE /* UIAlertController+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+Coroutine.h"; path = "cokit/cokit/UIKit/UIAlertController+Coroutine.h"; sourceTree = "<group>"; };
+		55697742F41F6613BEBACE54BFF9B0A0 /* coswift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coswift.h; path = coswift/coswift.h; sourceTree = "<group>"; };
+		5A2F8CCFBC7A9AFD2FCD5E26DC5BF916 /* co_queuedebugging_support.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = co_queuedebugging_support.m; path = cocore/co_queuedebugging_support.m; sourceTree = "<group>"; };
+		5C0ABDEF0BB2CD4DAC8778A0DD1D3C51 /* COPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = COPromise.m; path = coobjc/promise/COPromise.m; sourceTree = "<group>"; };
+		5C8F43FCBCED5A0659934CF2531AA45B /* COLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COLock.h; path = coobjc/co/COLock.h; sourceTree = "<group>"; };
+		5D6147C28D773263CCB25DD998E426D4 /* cokit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cokit-prefix.pch"; sourceTree = "<group>"; };
+		5D6643A5A6A15E8B6748F83120912FB9 /* cocore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = cocore.debug.xcconfig; sourceTree = "<group>"; };
+		5DA1AA5AE383C36B8B472F63540750C0 /* NSArray+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Coroutine.m"; path = "cokit/cokit/Foundation/NSArray+Coroutine.m"; sourceTree = "<group>"; };
+		5EEB95A9878444ECEC2F5100E7E43AEC /* coobjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "coobjc-prefix.pch"; sourceTree = "<group>"; };
+		5FB8B819829386FA0783E709E8AC40AC /* COGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COGenerator.h; path = coobjc/generator/COGenerator.h; sourceTree = "<group>"; };
+		6299525E310D59DDDB55909EB3860A9F /* co_csp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = co_csp.h; path = cocore/co_csp.h; sourceTree = "<group>"; };
+		6600AA6AEA5DCB5BFE7361BB54CC78EA /* UIVideoEditorController+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIVideoEditorController+Coroutine.h"; path = "cokit/cokit/UIKit/UIVideoEditorController+Coroutine.h"; sourceTree = "<group>"; };
+		6A2D9CEE4A576FC26BABFA909A602697 /* NSJSONSerialization+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSJSONSerialization+Coroutine.h"; path = "cokit/cokit/Foundation/NSJSONSerialization+Coroutine.h"; sourceTree = "<group>"; };
+		6F0EE731C5F2328773B2528210725C8F /* cokit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = cokit.framework; path = cokit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F93288EEC733DD0BBB67DBC874181F7 /* cocore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cocore.h; path = cocore/cocore.h; sourceTree = "<group>"; };
+		709FFDD6613843C78E3785BCBACF700F /* coobjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = coobjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		733EE4F0DA0EB2E8804BC15EFAD86ADA /* COKitCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COKitCommon.h; path = cokit/cokit/common/COKitCommon.h; sourceTree = "<group>"; };
+		7420BB9050232FA54501B01A8D348E5B /* COActorChan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COActorChan.h; path = coobjc/actor/COActorChan.h; sourceTree = "<group>"; };
+		746A70D4F1C9EC6290375A32C4B65A6F /* COActorCompletable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = COActorCompletable.m; path = coobjc/actor/COActorCompletable.m; sourceTree = "<group>"; };
+		767D97E31241FF31A73D654333166C91 /* CODispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CODispatch.m; path = cocore/CODispatch.m; sourceTree = "<group>"; };
+		7AB01A81A6EEADFE75EB4BA98C1BCBD7 /* coswift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "coswift-umbrella.h"; sourceTree = "<group>"; };
+		7B4D8E2EA7A11287DC70AB8A4174AB55 /* NSData+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Coroutine.m"; path = "cokit/cokit/Foundation/NSData+Coroutine.m"; sourceTree = "<group>"; };
+		7B88E7722DEFEEA6725C214FF339D991 /* cokit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = cokit.release.xcconfig; sourceTree = "<group>"; };
+		7D16362981F5CEFEEC8FEA1A08C4D880 /* co_tuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = co_tuple.m; path = coobjc/tuple/co_tuple.m; sourceTree = "<group>"; };
+		7E0907134B3669A847C946573D20C8F9 /* cocore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = cocore.release.xcconfig; sourceTree = "<group>"; };
+		7FD1F3EF8141C737D325E978136B5F53 /* coobjc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "coobjc-umbrella.h"; sourceTree = "<group>"; };
+		80533598E96AD9B97589DAB59B97E73E /* NSKeyedArchiver+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSKeyedArchiver+Coroutine.m"; path = "cokit/cokit/Foundation/NSKeyedArchiver+Coroutine.m"; sourceTree = "<group>"; };
+		8153C1EA5838E17D8FF42332F7D597C6 /* UIApplication+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Coroutine.h"; path = "cokit/cokit/UIKit/UIApplication+Coroutine.h"; sourceTree = "<group>"; };
+		834A8DA9A1D2D0C53EF80C8681CFE9A6 /* NSURLConnection+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+Coroutine.m"; path = "cokit/cokit/Foundation/NSURLConnection+Coroutine.m"; sourceTree = "<group>"; };
+		846ED291709DD1A085534697BA9B8268 /* NSString+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Coroutine.m"; path = "cokit/cokit/Foundation/NSString+Coroutine.m"; sourceTree = "<group>"; };
+		85FD3D18EA4F635FECF0B8E9AD13FD09 /* Chan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Chan.swift; path = coswift/Chan.swift; sourceTree = "<group>"; };
+		8A65A6BD68EE9C9B2AEF8CD2B4AEDF39 /* NSUserDefaults+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+Coroutine.h"; path = "cokit/cokit/Foundation/NSUserDefaults+Coroutine.h"; sourceTree = "<group>"; };
+		8AEBE99AB15DFB7820006505CB030D8B /* NSUserDefaults+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+Coroutine.m"; path = "cokit/cokit/Foundation/NSUserDefaults+Coroutine.m"; sourceTree = "<group>"; };
+		8CEA66D08C8F00FF7A5B006A9A156D62 /* coswift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = coswift.debug.xcconfig; sourceTree = "<group>"; };
+		8DA9ED623E660511AA4A6F69D24F6322 /* cokit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = cokit.modulemap; sourceTree = "<group>"; };
+		8E4D900E4C271C7DE6F9C21315E0D9E5 /* NSPropertyList+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPropertyList+Coroutine.m"; path = "cokit/cokit/Foundation/NSPropertyList+Coroutine.m"; sourceTree = "<group>"; };
+		8E9664440A3A17BDFC85889360E835C2 /* cokit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = cokit.debug.xcconfig; sourceTree = "<group>"; };
+		8EA772205E14397E5D142C8B9DC50EBE /* COGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = COGenerator.m; path = coobjc/generator/COGenerator.m; sourceTree = "<group>"; };
+		8EF62E996642E3E588AA036B31433470 /* cofishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cofishhook.c; path = cocore/cofishhook.c; sourceTree = "<group>"; };
+		91C163B8E9DCF41D4F413059E25A954D /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = coswift/Promise.swift; sourceTree = "<group>"; };
+		93ECA087F755624EB1C528A87E255E56 /* cocore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "cocore-Info.plist"; sourceTree = "<group>"; };
+		9D29FA124A9DD993E8A665C9C85F79C0 /* COActorChan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = COActorChan.m; path = coobjc/actor/COActorChan.m; sourceTree = "<group>"; };
+		9D52BE3F9B04E357E23554D5C0B7326C /* Pods-Coroutine Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coroutine Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E8BE581E41C2D6036DC44DBF1725026 /* COPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COPromise.h; path = coobjc/promise/COPromise.h; sourceTree = "<group>"; };
+		A064EE741B583DA0680354F0C6C2E423 /* co_queue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = co_queue.m; path = cocore/co_queue.m; sourceTree = "<group>"; };
+		A561BE37DD90773C90C3EBB412A08E86 /* co_autorelease.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = co_autorelease.h; path = cocore/co_autorelease.h; sourceTree = "<group>"; };
+		A6B5668EB5F463E9D752A2194CAA5549 /* cokit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "cokit-Info.plist"; sourceTree = "<group>"; };
+		A82AD308A998C09091539B93FCED55EB /* coroutine_context.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = coroutine_context.m; path = cocore/coroutine_context.m; sourceTree = "<group>"; };
+		AA216BD9E0017F6A24DBB0034EA42765 /* NSBundle+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+Coroutine.h"; path = "cokit/cokit/Foundation/NSBundle+Coroutine.h"; sourceTree = "<group>"; };
+		AA7A93D761CF3CEC5711A8DDDFDAB0A8 /* Generator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generator.swift; path = coswift/Generator.swift; sourceTree = "<group>"; };
+		AA7B16E142D3A23085FBC3B6D52F1D27 /* Pods-Coroutine Sample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Coroutine Sample-Info.plist"; sourceTree = "<group>"; };
+		ABA784EDCAA96FD145B6D8E9287A4A3A /* cocore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cocore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE07D0D7DD1905384EC1FC7095FAC134 /* Pods-Coroutine Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Coroutine Sample-dummy.m"; sourceTree = "<group>"; };
+		B1A440CFE0C07827762B769C23E7E936 /* COChan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COChan.h; path = coobjc/co/COChan.h; sourceTree = "<group>"; };
+		B68CB1E822719A2128C4D0056A518EAB /* coswift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "coswift-prefix.pch"; sourceTree = "<group>"; };
+		B69DE3CF57D2FF1793990E3787EF51A9 /* coobjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = coobjc.framework; path = coobjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C64D89ED7488BBC088D95EE8F7AA35 /* coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = coroutine.m; path = cocore/coroutine.m; sourceTree = "<group>"; };
+		B8B2941481BD4497DFB8606DE298F00D /* co_csp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = co_csp.m; path = cocore/co_csp.m; sourceTree = "<group>"; };
+		B8F6E4A32FA2E84779E54DB2A4ED49F3 /* NSKeyedArchiver+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSKeyedArchiver+Coroutine.h"; path = "cokit/cokit/Foundation/NSKeyedArchiver+Coroutine.h"; sourceTree = "<group>"; };
+		B905C0050C81A687E46ADFFB2E26AE67 /* NSDictionary+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Coroutine.m"; path = "cokit/cokit/Foundation/NSDictionary+Coroutine.m"; sourceTree = "<group>"; };
+		BBBBD4D18A825F94F75E41B0E32F7133 /* coswift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "coswift-Info.plist"; sourceTree = "<group>"; };
+		BD05A032B6241B45DB8E12259FE4CF39 /* Pods-Coroutine Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Coroutine Sample.modulemap"; sourceTree = "<group>"; };
+		C28FC22AFAF592E1B4A1394B1C7F94B1 /* coswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = coswift.framework; path = coswift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6002A488A69534D356B8ECC5C2A1796 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = coswift/Errors.swift; sourceTree = "<group>"; };
+		C8172F7AC3E2FB6021A053BBB2BCED8A /* UIImage+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Coroutine.h"; path = "cokit/cokit/UIKit/UIImage+Coroutine.h"; sourceTree = "<group>"; };
+		CA07281069390FAEC00EA9CB9124A293 /* co_queuedebugging_support.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = co_queuedebugging_support.h; path = cocore/co_queuedebugging_support.h; sourceTree = "<group>"; };
+		CF7C8D38C91758D0183E3C3C7291830F /* Pods-Coroutine Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Coroutine Sample-umbrella.h"; sourceTree = "<group>"; };
+		D027BCD6C6C98C4FD52D4B9599A21B4C /* coobjc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = coobjc.modulemap; sourceTree = "<group>"; };
+		D3616A2216DCA5C349EFD69249958DF4 /* COKitCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = COKitCommon.m; path = cokit/cokit/common/COKitCommon.m; sourceTree = "<group>"; };
+		D510CAEC3C1BDC8CA5664B33411E6C6D /* COCoroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COCoroutine.h; path = coobjc/co/COCoroutine.h; sourceTree = "<group>"; };
+		D6E739261233A0EC8276269BB48A3971 /* co_tuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = co_tuple.h; path = coobjc/tuple/co_tuple.h; sourceTree = "<group>"; };
+		D79981682EE50D0738886B9B2BCF977E /* coroutine_context.s */ = {isa = PBXFileReference; includeInIndex = 1; name = coroutine_context.s; path = cocore/coroutine_context.s; sourceTree = "<group>"; };
+		D85E053CD2B0E87B5C8F7EEB21F7E6AA /* coswift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "coswift-dummy.m"; sourceTree = "<group>"; };
+		D8F1A5A004C1381976B335A7CDBDB5F5 /* NSURLSession+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+Coroutine.h"; path = "cokit/cokit/Foundation/NSURLSession+Coroutine.h"; sourceTree = "<group>"; };
+		DA32B29B3BA62A1BA3596C2BD6C6C8A8 /* coobjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = coobjc.debug.xcconfig; sourceTree = "<group>"; };
+		DBC53D450A75352D985C9DDE464DA6EB /* COActorMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = COActorMessage.m; path = coobjc/actor/COActorMessage.m; sourceTree = "<group>"; };
+		DBD2C3AEE9FCB18CB8B27CF295C95DA2 /* NSFileManager+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+Coroutine.m"; path = "cokit/cokit/Foundation/NSFileManager+Coroutine.m"; sourceTree = "<group>"; };
+		DEA47564848438880659527A21CFE893 /* NSFileManager+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+Coroutine.h"; path = "cokit/cokit/Foundation/NSFileManager+Coroutine.h"; sourceTree = "<group>"; };
+		DF606D067AD35E944CD996761C8A6DF0 /* coswift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = coswift.release.xcconfig; sourceTree = "<group>"; };
+		E02E4D145F97839A76EB952CBB579BD6 /* COChan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = COChan.m; path = coobjc/co/COChan.m; sourceTree = "<group>"; };
+		E06C6EF6A684613DC7C123455140730C /* NSURLConnection+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+Coroutine.h"; path = "cokit/cokit/Foundation/NSURLConnection+Coroutine.h"; sourceTree = "<group>"; };
+		E4679E09D5E224DED4F259DCDC3F1AB3 /* UIAlertController+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+Coroutine.m"; path = "cokit/cokit/UIKit/UIAlertController+Coroutine.m"; sourceTree = "<group>"; };
+		E75CEB7D50AFBEE94D46B52E8AF94DBC /* NSDictionary+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Coroutine.h"; path = "cokit/cokit/Foundation/NSDictionary+Coroutine.h"; sourceTree = "<group>"; };
+		E859C37E0956EB987174AC37710BD2E2 /* cokit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cokit-umbrella.h"; sourceTree = "<group>"; };
+		EAD26E4A572843C3F81075B8F5F1D340 /* UIApplication+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Coroutine.m"; path = "cokit/cokit/UIKit/UIApplication+Coroutine.m"; sourceTree = "<group>"; };
+		ED5452C46EB9171E66363480C04A6577 /* coswift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = coswift.modulemap; sourceTree = "<group>"; };
+		EF932E1D6CFB543C14598B2182952C4E /* COCoroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = COCoroutine.m; path = coobjc/co/COCoroutine.m; sourceTree = "<group>"; };
+		F112BBEAB03E0DC643EA5D93517964D4 /* UIImage+Coroutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Coroutine.m"; path = "cokit/cokit/UIKit/UIImage+Coroutine.m"; sourceTree = "<group>"; };
+		F1C4A85F0D17A70D9797E46BF14D2BF8 /* co_autorelease.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = co_autorelease.mm; path = cocore/co_autorelease.mm; sourceTree = "<group>"; };
+		F1F08923B3F02422778DD1ED321CE7C6 /* Pods-Coroutine Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Coroutine Sample-acknowledgements.plist"; sourceTree = "<group>"; };
+		F5325AC03D9406C5953B0E3D563B98B5 /* co_queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = co_queue.h; path = cocore/co_queue.h; sourceTree = "<group>"; };
+		F6B11D9921D10A2629B54D494E458000 /* NSArray+Coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Coroutine.h"; path = "cokit/cokit/Foundation/NSArray+Coroutine.h"; sourceTree = "<group>"; };
+		FAB3496DD6A9711842F4EA24D4A9999C /* coroutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coroutine.h; path = cocore/coroutine.h; sourceTree = "<group>"; };
+		FD8AA81F3C2AB5A00C7A381991969E32 /* cofishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cofishhook.h; path = cocore/cofishhook.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		157758741E21B304C5E9F2D00D7293F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A138A44CF7D6A4E3BE4634241A5445BD /* cocore.framework in Frameworks */,
+				D6C7A74E2F04C11F52764CF2E9C78261 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		699D2816809D6A73DE7C982797EF5699 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FDFEF298475737EBDD3B48B5F5C5C5 /* cocore.framework in Frameworks */,
+				1C8DD3B3619B948FD2585DD2A297C324 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB4F132675D17413ACBEDE939411059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6626B44AE991095F072520BD992151B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90098AB4A547841B68E9EF515736F178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14997EE93F0AE3DF0C012D8A8ADEFB8D /* coobjc.framework in Frameworks */,
+				E0EB823D68C5B3EC79FA1E1293A3E480 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE4138A74AB1E0265FCEE946A94EDD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D05F42357D97DA8B768367F4C6E362 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30E0B4C0558B5ADF871E58E9B9BB720A /* coobjc */ = {
+			isa = PBXGroup;
+			children = (
+				D6E739261233A0EC8276269BB48A3971 /* co_tuple.h */,
+				7D16362981F5CEFEEC8FEA1A08C4D880 /* co_tuple.m */,
+				0BD516AF19D5D594EE3999AE795AF1B5 /* COActor.h */,
+				3555848518C663889A62A36BF0EC6523 /* COActor.m */,
+				7420BB9050232FA54501B01A8D348E5B /* COActorChan.h */,
+				9D29FA124A9DD993E8A665C9C85F79C0 /* COActorChan.m */,
+				0B9731C994191F2819C84B967D37116B /* COActorCompletable.h */,
+				746A70D4F1C9EC6290375A32C4B65A6F /* COActorCompletable.m */,
+				054E051FA215593A3DCFDCE42C740ACF /* COActorMessage.h */,
+				DBC53D450A75352D985C9DDE464DA6EB /* COActorMessage.m */,
+				B1A440CFE0C07827762B769C23E7E936 /* COChan.h */,
+				E02E4D145F97839A76EB952CBB579BD6 /* COChan.m */,
+				D510CAEC3C1BDC8CA5664B33411E6C6D /* COCoroutine.h */,
+				EF932E1D6CFB543C14598B2182952C4E /* COCoroutine.m */,
+				5FB8B819829386FA0783E709E8AC40AC /* COGenerator.h */,
+				8EA772205E14397E5D142C8B9DC50EBE /* COGenerator.m */,
+				5C8F43FCBCED5A0659934CF2531AA45B /* COLock.h */,
+				396AE8736143D4385AE171C5CC832BF7 /* coobjc.h */,
+				9E8BE581E41C2D6036DC44DBF1725026 /* COPromise.h */,
+				5C0ABDEF0BB2CD4DAC8778A0DD1D3C51 /* COPromise.m */,
+				DFAF719E34C1743931039876EF86281A /* Support Files */,
+			);
+			name = coobjc;
+			path = coobjc;
+			sourceTree = "<group>";
+		};
+		32D4D7A53826F8D149D2BD4C16B95C13 /* Pods-Coroutine Sample */ = {
+			isa = PBXGroup;
+			children = (
+				BD05A032B6241B45DB8E12259FE4CF39 /* Pods-Coroutine Sample.modulemap */,
+				36841950B74E73898712D66C12C3E395 /* Pods-Coroutine Sample-acknowledgements.markdown */,
+				F1F08923B3F02422778DD1ED321CE7C6 /* Pods-Coroutine Sample-acknowledgements.plist */,
+				AE07D0D7DD1905384EC1FC7095FAC134 /* Pods-Coroutine Sample-dummy.m */,
+				1FD541C1AA4ECB266DC050843CD20522 /* Pods-Coroutine Sample-frameworks.sh */,
+				AA7B16E142D3A23085FBC3B6D52F1D27 /* Pods-Coroutine Sample-Info.plist */,
+				CF7C8D38C91758D0183E3C3C7291830F /* Pods-Coroutine Sample-umbrella.h */,
+				9D52BE3F9B04E357E23554D5C0B7326C /* Pods-Coroutine Sample.debug.xcconfig */,
+				1D4DDCAAB3802F94EFDCFA46BB481E6F /* Pods-Coroutine Sample.release.xcconfig */,
+			);
+			name = "Pods-Coroutine Sample";
+			path = "Target Support Files/Pods-Coroutine Sample";
+			sourceTree = "<group>";
+		};
+		46A78EECFC371A31E88BD742EFE2F4F2 /* cokit */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5781C465BF5B3E73F76FDE6FC0EF8 /* cokit.h */,
+				733EE4F0DA0EB2E8804BC15EFAD86ADA /* COKitCommon.h */,
+				D3616A2216DCA5C349EFD69249958DF4 /* COKitCommon.m */,
+				F6B11D9921D10A2629B54D494E458000 /* NSArray+Coroutine.h */,
+				5DA1AA5AE383C36B8B472F63540750C0 /* NSArray+Coroutine.m */,
+				AA216BD9E0017F6A24DBB0034EA42765 /* NSBundle+Coroutine.h */,
+				2307F63899100A9F68B905A0717CDFE6 /* NSBundle+Coroutine.m */,
+				345307A9E912BC8D533845F2A059A5CF /* NSData+Coroutine.h */,
+				7B4D8E2EA7A11287DC70AB8A4174AB55 /* NSData+Coroutine.m */,
+				E75CEB7D50AFBEE94D46B52E8AF94DBC /* NSDictionary+Coroutine.h */,
+				B905C0050C81A687E46ADFFB2E26AE67 /* NSDictionary+Coroutine.m */,
+				DEA47564848438880659527A21CFE893 /* NSFileManager+Coroutine.h */,
+				DBD2C3AEE9FCB18CB8B27CF295C95DA2 /* NSFileManager+Coroutine.m */,
+				6A2D9CEE4A576FC26BABFA909A602697 /* NSJSONSerialization+Coroutine.h */,
+				389F5A5ED06B6007EDECF99653593207 /* NSJSONSerialization+Coroutine.m */,
+				B8F6E4A32FA2E84779E54DB2A4ED49F3 /* NSKeyedArchiver+Coroutine.h */,
+				80533598E96AD9B97589DAB59B97E73E /* NSKeyedArchiver+Coroutine.m */,
+				44C379D905F7E761150BBA833D728033 /* NSPropertyList+Coroutine.h */,
+				8E4D900E4C271C7DE6F9C21315E0D9E5 /* NSPropertyList+Coroutine.m */,
+				0E22DAEC3C461A5D347FB42260C348CF /* NSString+Coroutine.h */,
+				846ED291709DD1A085534697BA9B8268 /* NSString+Coroutine.m */,
+				E06C6EF6A684613DC7C123455140730C /* NSURLConnection+Coroutine.h */,
+				834A8DA9A1D2D0C53EF80C8681CFE9A6 /* NSURLConnection+Coroutine.m */,
+				D8F1A5A004C1381976B335A7CDBDB5F5 /* NSURLSession+Coroutine.h */,
+				0F6B486873265D27ABE6E14A150C9192 /* NSURLSession+Coroutine.m */,
+				8A65A6BD68EE9C9B2AEF8CD2B4AEDF39 /* NSUserDefaults+Coroutine.h */,
+				8AEBE99AB15DFB7820006505CB030D8B /* NSUserDefaults+Coroutine.m */,
+				412CD8C3D1C2CFF89CE7C870E5FF0D61 /* NSXMLParser+Coroutine.h */,
+				10C139F7377498E2D0029F502173171D /* NSXMLParser+Coroutine.m */,
+				4CD82A96773449574138E3952749EEEE /* UIAlertController+Coroutine.h */,
+				E4679E09D5E224DED4F259DCDC3F1AB3 /* UIAlertController+Coroutine.m */,
+				8153C1EA5838E17D8FF42332F7D597C6 /* UIApplication+Coroutine.h */,
+				EAD26E4A572843C3F81075B8F5F1D340 /* UIApplication+Coroutine.m */,
+				C8172F7AC3E2FB6021A053BBB2BCED8A /* UIImage+Coroutine.h */,
+				F112BBEAB03E0DC643EA5D93517964D4 /* UIImage+Coroutine.m */,
+				33EFB927D731FF339B38525DDBB39B55 /* UIImagePickerController+Coroutine.h */,
+				1C96F4996FC81C16AFCB97836ED54E72 /* UIImagePickerController+Coroutine.m */,
+				6600AA6AEA5DCB5BFE7361BB54CC78EA /* UIVideoEditorController+Coroutine.h */,
+				00DA83B5ABFCC57E18D0819C4093CD80 /* UIVideoEditorController+Coroutine.m */,
+				C58347EBCB1A5589AEBDD03A90B51641 /* Support Files */,
+			);
+			name = cokit;
+			path = cokit;
+			sourceTree = "<group>";
+		};
+		A150BEAC7149CF53AB11A0C0FDCBC8D7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED5452C46EB9171E66363480C04A6577 /* coswift.modulemap */,
+				D85E053CD2B0E87B5C8F7EEB21F7E6AA /* coswift-dummy.m */,
+				BBBBD4D18A825F94F75E41B0E32F7133 /* coswift-Info.plist */,
+				B68CB1E822719A2128C4D0056A518EAB /* coswift-prefix.pch */,
+				7AB01A81A6EEADFE75EB4BA98C1BCBD7 /* coswift-umbrella.h */,
+				8CEA66D08C8F00FF7A5B006A9A156D62 /* coswift.debug.xcconfig */,
+				DF606D067AD35E944CD996761C8A6DF0 /* coswift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/coswift";
+			sourceTree = "<group>";
+		};
+		BA7372F85D886C732CC0FF8E2EB0B6D0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2386E749C81495E6169733E967B25B20 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BAFDBA1EF79679FC2E3A61AAE53CBC1A /* coswift */ = {
+			isa = PBXGroup;
+			children = (
+				85FD3D18EA4F635FECF0B8E9AD13FD09 /* Chan.swift */,
+				172ABAC00D1B375534D499E2B37984DC /* Coroutine.swift */,
+				55697742F41F6613BEBACE54BFF9B0A0 /* coswift.h */,
+				3D91F36DDAAA59A2D9DD83551984B743 /* coswift.swift */,
+				C6002A488A69534D356B8ECC5C2A1796 /* Errors.swift */,
+				AA7A93D761CF3CEC5711A8DDDFDAB0A8 /* Generator.swift */,
+				91C163B8E9DCF41D4F413059E25A954D /* Promise.swift */,
+				A150BEAC7149CF53AB11A0C0FDCBC8D7 /* Support Files */,
+			);
+			name = coswift;
+			path = coswift;
+			sourceTree = "<group>";
+		};
+		BB1AFBBA27AC2C8C4674F504C13571C4 /* cocore */ = {
+			isa = PBXGroup;
+			children = (
+				A561BE37DD90773C90C3EBB412A08E86 /* co_autorelease.h */,
+				F1C4A85F0D17A70D9797E46BF14D2BF8 /* co_autorelease.mm */,
+				6299525E310D59DDDB55909EB3860A9F /* co_csp.h */,
+				B8B2941481BD4497DFB8606DE298F00D /* co_csp.m */,
+				1BE53E83BA3F6133A3E9ACD528FD77B3 /* co_errors.h */,
+				0A42AACB7C772A5E54BE9DB6BD07594E /* co_errors.m */,
+				F5325AC03D9406C5953B0E3D563B98B5 /* co_queue.h */,
+				A064EE741B583DA0680354F0C6C2E423 /* co_queue.m */,
+				CA07281069390FAEC00EA9CB9124A293 /* co_queuedebugging_support.h */,
+				5A2F8CCFBC7A9AFD2FCD5E26DC5BF916 /* co_queuedebugging_support.m */,
+				6F93288EEC733DD0BBB67DBC874181F7 /* cocore.h */,
+				08CA8AEF7767366039DE761228EF3123 /* CODispatch.h */,
+				767D97E31241FF31A73D654333166C91 /* CODispatch.m */,
+				8EF62E996642E3E588AA036B31433470 /* cofishhook.c */,
+				FD8AA81F3C2AB5A00C7A381991969E32 /* cofishhook.h */,
+				FAB3496DD6A9711842F4EA24D4A9999C /* coroutine.h */,
+				B6C64D89ED7488BBC088D95EE8F7AA35 /* coroutine.m */,
+				3794CC532D74699AF3472C3A0C914BA9 /* coroutine_context.h */,
+				A82AD308A998C09091539B93FCED55EB /* coroutine_context.m */,
+				D79981682EE50D0738886B9B2BCF977E /* coroutine_context.s */,
+				D2114B7EA46E99F8FBC3B414AC4ADEF0 /* Support Files */,
+			);
+			name = cocore;
+			path = cocore;
+			sourceTree = "<group>";
+		};
+		C58347EBCB1A5589AEBDD03A90B51641 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DA9ED623E660511AA4A6F69D24F6322 /* cokit.modulemap */,
+				018649C48CDAB1401DA9356EE64314B2 /* cokit-dummy.m */,
+				A6B5668EB5F463E9D752A2194CAA5549 /* cokit-Info.plist */,
+				5D6147C28D773263CCB25DD998E426D4 /* cokit-prefix.pch */,
+				E859C37E0956EB987174AC37710BD2E2 /* cokit-umbrella.h */,
+				8E9664440A3A17BDFC85889360E835C2 /* cokit.debug.xcconfig */,
+				7B88E7722DEFEEA6725C214FF339D991 /* cokit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/cokit";
+			sourceTree = "<group>";
+		};
+		C92B9ED63C9DCD0BEA9AF9BE59CFF9B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CAE12F80BCE4BA1E68D51DC7D477A77 /* cocore.framework */,
+				6F0EE731C5F2328773B2528210725C8F /* cokit.framework */,
+				B69DE3CF57D2FF1793990E3787EF51A9 /* coobjc.framework */,
+				C28FC22AFAF592E1B4A1394B1C7F94B1 /* coswift.framework */,
+				0BB0375F48EBF1DEF90C14495DED7E31 /* Pods_Coroutine_Sample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				F6C048407328600307F2C9E396728F10 /* Frameworks */,
+				D51C3DA725678C2B751922983A8BEAF1 /* Pods */,
+				C92B9ED63C9DCD0BEA9AF9BE59CFF9B5 /* Products */,
+				ED874A4D77AC274185E94010EA92C9D4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D2114B7EA46E99F8FBC3B414AC4ADEF0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D45211FA8E5957C8D98FFC18B0133A /* cocore.modulemap */,
+				0CC581A31BE47864FAF5703EFF764C37 /* cocore-dummy.m */,
+				93ECA087F755624EB1C528A87E255E56 /* cocore-Info.plist */,
+				0457D0A0FD0F9ED1A0A5D47F0C3CCA2C /* cocore-prefix.pch */,
+				4525F39559BEF71694686BC8269D4503 /* cocore-umbrella.h */,
+				5D6643A5A6A15E8B6748F83120912FB9 /* cocore.debug.xcconfig */,
+				7E0907134B3669A847C946573D20C8F9 /* cocore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/cocore";
+			sourceTree = "<group>";
+		};
+		D51C3DA725678C2B751922983A8BEAF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB1AFBBA27AC2C8C4674F504C13571C4 /* cocore */,
+				46A78EECFC371A31E88BD742EFE2F4F2 /* cokit */,
+				30E0B4C0558B5ADF871E58E9B9BB720A /* coobjc */,
+				BAFDBA1EF79679FC2E3A61AAE53CBC1A /* coswift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFAF719E34C1743931039876EF86281A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D027BCD6C6C98C4FD52D4B9599A21B4C /* coobjc.modulemap */,
+				26928CE9FD72C8828F57A36583BECD3A /* coobjc-dummy.m */,
+				2FAE0F67B8525A7EFC254B727B352190 /* coobjc-Info.plist */,
+				5EEB95A9878444ECEC2F5100E7E43AEC /* coobjc-prefix.pch */,
+				7FD1F3EF8141C737D325E978136B5F53 /* coobjc-umbrella.h */,
+				DA32B29B3BA62A1BA3596C2BD6C6C8A8 /* coobjc.debug.xcconfig */,
+				0BBB7E07083F5372259C53B10869B593 /* coobjc.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/coobjc";
+			sourceTree = "<group>";
+		};
+		ED874A4D77AC274185E94010EA92C9D4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				32D4D7A53826F8D149D2BD4C16B95C13 /* Pods-Coroutine Sample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F6C048407328600307F2C9E396728F10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABA784EDCAA96FD145B6D8E9287A4A3A /* cocore.framework */,
+				709FFDD6613843C78E3785BCBACF700F /* coobjc.framework */,
+				BA7372F85D886C732CC0FF8E2EB0B6D0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4B2F53FB47FAA4DDB41D102B084AE5CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DCFFE2326CBDE9181191860EB829BC /* cokit-umbrella.h in Headers */,
+				AAF740E6174E5FD0B78448AC80B07D23 /* cokit.h in Headers */,
+				F49402EFF59C71F2ECEDEEE7DCE7F9B9 /* COKitCommon.h in Headers */,
+				D1E5C27AE90C2C491CC6AF738FAFC2BC /* NSArray+Coroutine.h in Headers */,
+				BE8028F5B37D878B9EF2D57BDE2C4F90 /* NSBundle+Coroutine.h in Headers */,
+				99A4A9400724B272DAC9B06BBD6414BC /* NSData+Coroutine.h in Headers */,
+				9AA18B8A05D5B59854470F5201F95C97 /* NSDictionary+Coroutine.h in Headers */,
+				2855BED7295707329F0310793D9D295D /* NSFileManager+Coroutine.h in Headers */,
+				AEE5BED0CDB772C7C5C3A8E38C66ABE8 /* NSJSONSerialization+Coroutine.h in Headers */,
+				37270A99381E20C0C59F5C672C4C55BC /* NSKeyedArchiver+Coroutine.h in Headers */,
+				5E9A2A597014DA296915E6143C23FB9B /* NSPropertyList+Coroutine.h in Headers */,
+				82E596958DA14B89B402A0E52D1A2279 /* NSString+Coroutine.h in Headers */,
+				BB1E0E113E7FA0D51BD4955342EB974D /* NSURLConnection+Coroutine.h in Headers */,
+				5BD9031BD06EAE051323F4027BA3DA62 /* NSURLSession+Coroutine.h in Headers */,
+				59DBF05026EFC3D4CD5147C9BF77986D /* NSUserDefaults+Coroutine.h in Headers */,
+				BB28601FA498243AD16B352DCF72D69C /* NSXMLParser+Coroutine.h in Headers */,
+				B147BE8490DA381D990613493A7159EF /* UIAlertController+Coroutine.h in Headers */,
+				296EA806B0A737DC6527331B8598F504 /* UIApplication+Coroutine.h in Headers */,
+				090616495423C65A1E520A37D1062580 /* UIImage+Coroutine.h in Headers */,
+				CE7FB40CD8FAF9A07BC979149B165B84 /* UIImagePickerController+Coroutine.h in Headers */,
+				D91148528403D9BD2E2FE6CB12D156F8 /* UIVideoEditorController+Coroutine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5550A458D70D793FD60D9A14480F8B9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C0D2A17D82B950476143CF80AB46D5 /* co_tuple.h in Headers */,
+				1194FD3620FACC4C1B8D7C3A41174342 /* COActor.h in Headers */,
+				D52DDB6B9FDA7DEDBF0C08B535846E3A /* COActorChan.h in Headers */,
+				0027D255FA3001DC8BF730D7EF956836 /* COActorCompletable.h in Headers */,
+				49EF27DA3712FF93151ACF5919CBE4FC /* COActorMessage.h in Headers */,
+				A60543E1203677BFCA3AB84BBF9B702F /* COChan.h in Headers */,
+				BAD003174B48B314691717B963C5EB74 /* COCoroutine.h in Headers */,
+				D363C06F8F1ED0789D2CB611E2D53E90 /* COGenerator.h in Headers */,
+				EFC9AA3DCA0ACFB15E186A5857485A40 /* COLock.h in Headers */,
+				F8BA19E1649428DEE5FBA0C9ACCE800C /* coobjc-umbrella.h in Headers */,
+				C64787854DEBF3B5BEB41B8F39D0E71F /* coobjc.h in Headers */,
+				8441AAF12EE6A1231E2BADC490C54FEE /* COPromise.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718DCEB6FF027B918E4879B24AE07CA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84C0295A32BA0DE131A978C59D640C7 /* Pods-Coroutine Sample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C63660A8CF4AC0016A6A4768066AB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C03CE9458CA054723E705FC5CF084B /* co_autorelease.h in Headers */,
+				7C0FBE617AD93C5E63C50549A528AE88 /* co_csp.h in Headers */,
+				102AA0D75769EE09AB510CD3AAD1A0C1 /* co_errors.h in Headers */,
+				2CA25E69BEAFA9E374A189891DE4ED59 /* co_queue.h in Headers */,
+				88DA7C1026D0DFA61217BEF3B1955250 /* co_queuedebugging_support.h in Headers */,
+				FBF4B955AFACC13A7CAD9815D0AE5892 /* cocore-umbrella.h in Headers */,
+				F4285DA97E6C3A000531AD0A3B6FD591 /* cocore.h in Headers */,
+				592262F2F1406815A7D370089ADD3EC3 /* CODispatch.h in Headers */,
+				0F9D247869E56D9A0E90C4CCEBC5418C /* cofishhook.h in Headers */,
+				55B1E37A5C7FDE49EF3DD74C25E6AC82 /* coroutine.h in Headers */,
+				D8E85B643A93FE3C39FEFC83CC6DDD0A /* coroutine_context.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF531793BFCEF8EE57B59D4A50CEB5DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0DF57EC8EAFEAB673F31D892E8D395 /* coswift-umbrella.h in Headers */,
+				CF48B5E67FDB74755C7FC5601EF04FA0 /* coswift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31EB174E297AAE291D844E1598635D15 /* cocore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDA6321E6355ECFB968AA041F0D07B04 /* Build configuration list for PBXNativeTarget "cocore" */;
+			buildPhases = (
+				94C63660A8CF4AC0016A6A4768066AB1 /* Headers */,
+				16E85337FE3F7A01E5E19CF66DF6AF56 /* Sources */,
+				9EE4138A74AB1E0265FCEE946A94EDD5 /* Frameworks */,
+				7B188214D60AC928DFC13B34A46E2910 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cocore;
+			productName = cocore;
+			productReference = 0CAE12F80BCE4BA1E68D51DC7D477A77 /* cocore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5531C73B11419A77680ECD0124FB1DC4 /* Pods-Coroutine Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BA778C8B51DEE71F2E080D4CDA48184 /* Build configuration list for PBXNativeTarget "Pods-Coroutine Sample" */;
+			buildPhases = (
+				718DCEB6FF027B918E4879B24AE07CA1 /* Headers */,
+				E8F9CBDED035A940F105A9EE9AE653E3 /* Sources */,
+				6CB4F132675D17413ACBEDE939411059 /* Frameworks */,
+				421E1158EB1B17CE8F756E3439CDA74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A53E1A2EC9E3FC878A1EED43166D0894 /* PBXTargetDependency */,
+				F01521D3026F2DA12AF30948B1A7DD81 /* PBXTargetDependency */,
+				D010C4233665E0B39BDBCC78AF20767B /* PBXTargetDependency */,
+				1EA66F91EC3EF72EF1184A45EFDBCD2A /* PBXTargetDependency */,
+			);
+			name = "Pods-Coroutine Sample";
+			productName = "Pods-Coroutine Sample";
+			productReference = 0BB0375F48EBF1DEF90C14495DED7E31 /* Pods_Coroutine_Sample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1470988D9D5E0EBB0ABC8313894851A /* coobjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED2FC1AAADB5F0C7229F5CFC44EFC96 /* Build configuration list for PBXNativeTarget "coobjc" */;
+			buildPhases = (
+				5550A458D70D793FD60D9A14480F8B9C /* Headers */,
+				6DFD78A3C2B0252E5B902516636A3222 /* Sources */,
+				699D2816809D6A73DE7C982797EF5699 /* Frameworks */,
+				1E8049E5D9D5FC5B85419521165946CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC63C029BC0BF0D1FB1E538159E47452 /* PBXTargetDependency */,
+			);
+			name = coobjc;
+			productName = coobjc;
+			productReference = B69DE3CF57D2FF1793990E3787EF51A9 /* coobjc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9693734705F1057BFC8FB6B07BA32BF /* coswift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7311FD6FF7DB061B01BA45254E05951D /* Build configuration list for PBXNativeTarget "coswift" */;
+			buildPhases = (
+				AF531793BFCEF8EE57B59D4A50CEB5DB /* Headers */,
+				F92687A79330BA125537CBEC25F12E91 /* Sources */,
+				157758741E21B304C5E9F2D00D7293F0 /* Frameworks */,
+				0DF175BFB83FCB57A4BE6440852C1AEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89D1A97168768BBA7A25977131991A79 /* PBXTargetDependency */,
+			);
+			name = coswift;
+			productName = coswift;
+			productReference = C28FC22AFAF592E1B4A1394B1C7F94B1 /* coswift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F86F09EE1F7E4F68AD495A31A38637F4 /* cokit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13D51BDFFF6C11D3F4E0683E4670E711 /* Build configuration list for PBXNativeTarget "cokit" */;
+			buildPhases = (
+				4B2F53FB47FAA4DDB41D102B084AE5CF /* Headers */,
+				4BD3E248A3BFD014B17A96D3A0A45A37 /* Sources */,
+				90098AB4A547841B68E9EF515736F178 /* Frameworks */,
+				EF0AF5BD3699EA7B7F654A920712E34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				893FCBE784CFC9ECA8709C28EDCE9FD7 /* PBXTargetDependency */,
+			);
+			name = cokit;
+			productName = cokit;
+			productReference = 6F0EE731C5F2328773B2528210725C8F /* cokit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C92B9ED63C9DCD0BEA9AF9BE59CFF9B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31EB174E297AAE291D844E1598635D15 /* cocore */,
+				F86F09EE1F7E4F68AD495A31A38637F4 /* cokit */,
+				D1470988D9D5E0EBB0ABC8313894851A /* coobjc */,
+				D9693734705F1057BFC8FB6B07BA32BF /* coswift */,
+				5531C73B11419A77680ECD0124FB1DC4 /* Pods-Coroutine Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DF175BFB83FCB57A4BE6440852C1AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8049E5D9D5FC5B85419521165946CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		421E1158EB1B17CE8F756E3439CDA74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B188214D60AC928DFC13B34A46E2910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0AF5BD3699EA7B7F654A920712E34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16E85337FE3F7A01E5E19CF66DF6AF56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61B8CA96C9BF3D569F4936EF59EF61C /* co_autorelease.mm in Sources */,
+				4B7A3C3EB41EA1C67B53E5CFB2BD9BEB /* co_csp.m in Sources */,
+				AE657E5A0678C1781EEAEF8C00075320 /* co_errors.m in Sources */,
+				ABF3B75FB633660981F3F9C90B4F2218 /* co_queue.m in Sources */,
+				6791CBB1D0773E6AE86602D56C9255BA /* co_queuedebugging_support.m in Sources */,
+				EEB89C54C1B5444EB52389342DC2599C /* cocore-dummy.m in Sources */,
+				0E7A8256A225A82A6BD7A05BAAC4C46F /* CODispatch.m in Sources */,
+				8821BB369EF49A2E95D71130E63271C7 /* cofishhook.c in Sources */,
+				16A59642B0E1ACE46138C37F81D0B769 /* coroutine.m in Sources */,
+				203B36DE9570EFF4377626370D3FA49B /* coroutine_context.m in Sources */,
+				D1A747EC58E34474AA6814182664F7EE /* coroutine_context.s in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD3E248A3BFD014B17A96D3A0A45A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABF80704EC363C6C2D03694016740F8 /* cokit-dummy.m in Sources */,
+				CE0FFF2FBE73DEC5C05F36B3DA2EB53B /* COKitCommon.m in Sources */,
+				901BEB85B65940824850C6916C7B8172 /* NSArray+Coroutine.m in Sources */,
+				7ADE070401BB3F913D1BAA42CE02C469 /* NSBundle+Coroutine.m in Sources */,
+				CBD6443D5C501D3864FB76E8F4406604 /* NSData+Coroutine.m in Sources */,
+				B292F728AD65D56DB7AA41A92482A62A /* NSDictionary+Coroutine.m in Sources */,
+				920A073B3A72C29C2ED43FB2F2FAEDF2 /* NSFileManager+Coroutine.m in Sources */,
+				CDA961712E37E266B3CA8B470549305E /* NSJSONSerialization+Coroutine.m in Sources */,
+				0B9EFDDA5BF7BE4E1B668C9C14222BA1 /* NSKeyedArchiver+Coroutine.m in Sources */,
+				C2F38C2149A52F7030A1B88963476986 /* NSPropertyList+Coroutine.m in Sources */,
+				BB98C0967EE8C215EF60C6E9E71F19FE /* NSString+Coroutine.m in Sources */,
+				6C7EA2936E091B6F5A0FB46AACEE1A92 /* NSURLConnection+Coroutine.m in Sources */,
+				74CFDCBC8D3034C47B26F204A996D302 /* NSURLSession+Coroutine.m in Sources */,
+				573A3EFD55CCBF4EA8548C19A13DDF25 /* NSUserDefaults+Coroutine.m in Sources */,
+				6628993369E2F9E8ED4EFB9FDBA127EF /* NSXMLParser+Coroutine.m in Sources */,
+				21C22CCA693DD82CF286B94150E047DD /* UIAlertController+Coroutine.m in Sources */,
+				30CC67F970E32C4C39C2677526FD9EB9 /* UIApplication+Coroutine.m in Sources */,
+				C91EE60E1C130CF6CC59CD522FF04404 /* UIImage+Coroutine.m in Sources */,
+				D273054FBDA439B9234A5932BE8B6F06 /* UIImagePickerController+Coroutine.m in Sources */,
+				FF02C4555C7644C1BBBC8AC32DF2673E /* UIVideoEditorController+Coroutine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFD78A3C2B0252E5B902516636A3222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96063EF9D8AD02BC7AB20364940E14B0 /* co_tuple.m in Sources */,
+				E2E97F8A4353CB6D192816DB2B7DE43B /* COActor.m in Sources */,
+				FB888A7C153E0EA83034A61986A95946 /* COActorChan.m in Sources */,
+				30E5BF90015E24AA3E198DF8F966C304 /* COActorCompletable.m in Sources */,
+				C940AB06BF359927FB2D210D196E42CB /* COActorMessage.m in Sources */,
+				870D2E4E9DF32B47F2D2C0E4CEB3D392 /* COChan.m in Sources */,
+				B3908E1B68E56EC46FE751A9D5528B05 /* COCoroutine.m in Sources */,
+				80CED67BA665576CA1E724249C60D486 /* COGenerator.m in Sources */,
+				528D1A693646666F3C988E55E8E0BEDA /* coobjc-dummy.m in Sources */,
+				9123B95293456F578B01C76ADDA2C70E /* COPromise.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F9CBDED035A940F105A9EE9AE653E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E99F8DC737AD15EA42A4DF6B57FB542 /* Pods-Coroutine Sample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F92687A79330BA125537CBEC25F12E91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987103BDF14B3A8CFE0682358807FE88 /* Chan.swift in Sources */,
+				ACB84251361184842D1E7354E0F895E1 /* Coroutine.swift in Sources */,
+				6DF06A4BDAC9223EA9127CAA235DECFE /* coswift-dummy.m in Sources */,
+				41764A3B0693BA0F684068FA0AE464DD /* coswift.swift in Sources */,
+				909A146A57F54E0CCEBA2C81B4BD3BA4 /* Errors.swift in Sources */,
+				83FF296B89EF4B5E80425FCB90C473B8 /* Generator.swift in Sources */,
+				13920398512771628288F3B66F8FF5F3 /* Promise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EA66F91EC3EF72EF1184A45EFDBCD2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = coswift;
+			target = D9693734705F1057BFC8FB6B07BA32BF /* coswift */;
+			targetProxy = BF4B5F88636AF4F8954EB81D6310C08E /* PBXContainerItemProxy */;
+		};
+		893FCBE784CFC9ECA8709C28EDCE9FD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = coobjc;
+			target = D1470988D9D5E0EBB0ABC8313894851A /* coobjc */;
+			targetProxy = A9ACD4013E43DF47D25B9E36548E976B /* PBXContainerItemProxy */;
+		};
+		89D1A97168768BBA7A25977131991A79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = cocore;
+			target = 31EB174E297AAE291D844E1598635D15 /* cocore */;
+			targetProxy = 5085E2CDAA0ED50CF0CFD8517521CB76 /* PBXContainerItemProxy */;
+		};
+		A53E1A2EC9E3FC878A1EED43166D0894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = cocore;
+			target = 31EB174E297AAE291D844E1598635D15 /* cocore */;
+			targetProxy = D723BE66A6D7B14D8915B235A40A63C9 /* PBXContainerItemProxy */;
+		};
+		BC63C029BC0BF0D1FB1E538159E47452 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = cocore;
+			target = 31EB174E297AAE291D844E1598635D15 /* cocore */;
+			targetProxy = 137FE8ECF55AED0F15F9D6A146849CCC /* PBXContainerItemProxy */;
+		};
+		D010C4233665E0B39BDBCC78AF20767B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = coobjc;
+			target = D1470988D9D5E0EBB0ABC8313894851A /* coobjc */;
+			targetProxy = 10262F07C081BF9A6B3F42E3C0DCB615 /* PBXContainerItemProxy */;
+		};
+		F01521D3026F2DA12AF30948B1A7DD81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = cokit;
+			target = F86F09EE1F7E4F68AD495A31A38637F4 /* cokit */;
+			targetProxy = 1A61B98A08F3B533BDCCCE2296DF266A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D5AC97CBAC7C3CA83A106F9AE3005C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEA66D08C8F00FF7A5B006A9A156D62 /* coswift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/coswift/coswift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/coswift/coswift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/coswift/coswift.modulemap";
+				PRODUCT_MODULE_NAME = coswift;
+				PRODUCT_NAME = coswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B5DD09B83EE8E905F24BA730DECD0FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BBB7E07083F5372259C53B10869B593 /* coobjc.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/coobjc/coobjc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/coobjc/coobjc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/coobjc/coobjc.modulemap";
+				PRODUCT_MODULE_NAME = coobjc;
+				PRODUCT_NAME = coobjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		35E95E71E00C3432E6DAE2E2E0451319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B88E7722DEFEEA6725C214FF339D991 /* cokit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/cokit/cokit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/cokit/cokit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/cokit/cokit.modulemap";
+				PRODUCT_MODULE_NAME = cokit;
+				PRODUCT_NAME = cokit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3EC789B56EDC72DD93C4F558CEE8E99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D52BE3F9B04E357E23554D5C0B7326C /* Pods-Coroutine Sample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4400899CC6CDFF636CF3261A53C1A55B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D4DDCAAB3802F94EFDCFA46BB481E6F /* Pods-Coroutine Sample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Coroutine Sample/Pods-Coroutine Sample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69B9C4E8839407B14A3610FE9B9D9ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0907134B3669A847C946573D20C8F9 /* cocore.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/cocore/cocore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/cocore/cocore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/cocore/cocore.modulemap";
+				PRODUCT_MODULE_NAME = cocore;
+				PRODUCT_NAME = cocore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7E73BC4FFD0BEA79D5431CDEDEDCA28D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF606D067AD35E944CD996761C8A6DF0 /* coswift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/coswift/coswift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/coswift/coswift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/coswift/coswift.modulemap";
+				PRODUCT_MODULE_NAME = coswift;
+				PRODUCT_NAME = coswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		94CF58E6FA8810CF89E935A97E0DCB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9664440A3A17BDFC85889360E835C2 /* cokit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/cokit/cokit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/cokit/cokit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/cokit/cokit.modulemap";
+				PRODUCT_MODULE_NAME = cokit;
+				PRODUCT_NAME = cokit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5E46055269E998D249C493221A338E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6643A5A6A15E8B6748F83120912FB9 /* cocore.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/cocore/cocore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/cocore/cocore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/cocore/cocore.modulemap";
+				PRODUCT_MODULE_NAME = cocore;
+				PRODUCT_NAME = cocore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7D55ED3A32AB40911FDC27E18D18679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA32B29B3BA62A1BA3596C2BD6C6C8A8 /* coobjc.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/coobjc/coobjc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/coobjc/coobjc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/coobjc/coobjc.modulemap";
+				PRODUCT_MODULE_NAME = coobjc;
+				PRODUCT_NAME = coobjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13D51BDFFF6C11D3F4E0683E4670E711 /* Build configuration list for PBXNativeTarget "cokit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CF58E6FA8810CF89E935A97E0DCB85 /* Debug */,
+				35E95E71E00C3432E6DAE2E2E0451319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
+				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BA778C8B51DEE71F2E080D4CDA48184 /* Build configuration list for PBXNativeTarget "Pods-Coroutine Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EC789B56EDC72DD93C4F558CEE8E99C /* Debug */,
+				4400899CC6CDFF636CF3261A53C1A55B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7311FD6FF7DB061B01BA45254E05951D /* Build configuration list for PBXNativeTarget "coswift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5AC97CBAC7C3CA83A106F9AE3005C4 /* Debug */,
+				7E73BC4FFD0BEA79D5431CDEDEDCA28D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED2FC1AAADB5F0C7229F5CFC44EFC96 /* Build configuration list for PBXNativeTarget "coobjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D55ED3A32AB40911FDC27E18D18679 /* Debug */,
+				2B5DD09B83EE8E905F24BA730DECD0FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDA6321E6355ECFB968AA041F0D07B04 /* Build configuration list for PBXNativeTarget "cocore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E46055269E998D249C493221A338E2 /* Debug */,
+				69B9C4E8839407B14A3610FE9B9D9ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
