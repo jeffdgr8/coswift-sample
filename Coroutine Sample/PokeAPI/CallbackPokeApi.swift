@@ -15,7 +15,13 @@ class CallbackPokeApi {
 
     func getPokemon(named name: String, completion: @escaping (Pokemon?, Error?) -> Void) {
 
-        let url = URL(string: "pokemon/\(name)/", relativeTo: self.baseUrl)!
+        guard let url = URL(string: "pokemon/\(name.lowercased())/", relativeTo: self.baseUrl) else {
+            DispatchQueue.main.async {
+                completion(nil, PokemonError.invalidName("Invalid Pokemon name \(name)"))
+            }
+            return
+        }
+
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
 
             guard data != nil, error == nil else { completion(nil, error); return }
@@ -95,6 +101,7 @@ class CallbackPokeApi {
     }
 
     enum PokemonError: Error {
+        case invalidName(String)
         case noImage(String)
         case invalidImageUrl(String)
         case notAnImage(String)

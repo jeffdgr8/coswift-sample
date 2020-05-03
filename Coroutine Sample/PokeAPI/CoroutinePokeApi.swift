@@ -19,7 +19,11 @@ class CoroutinePokeApi {
         return Promise<Pokemon>(constructor: { (fulfill, reject) in
             co_launch_onqueue(DispatchQueue.global()) {
 
-                let url = URL(string: "pokemon/\(name)/", relativeTo: self.baseUrl)!
+                guard let url = URL(string: "pokemon/\(name.lowercased())/", relativeTo: self.baseUrl) else {
+                    reject(PokemonError.invalidName("Invalid Pokemon name \(name)"))
+                    return
+                }
+
                 var error: NSError? = nil
                 let data: Data? = URLSession.shared.co_dataTask(with: url, response: nil, error: &error)
 
@@ -85,6 +89,7 @@ class CoroutinePokeApi {
     }
 
     enum PokemonError: Error {
+        case invalidName(String)
         case noImage(String)
         case invalidImageUrl(String)
         case notAnImage(String)

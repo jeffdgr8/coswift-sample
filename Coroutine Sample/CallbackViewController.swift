@@ -8,10 +8,11 @@
 
 import UIKit
 
+
 // MARK: Constants
 
 
-private let POKEMON_NAME = "ditto"
+private let DEFAULT_POKEMON_NAME = "pikachu"
 private let ANIMATION_DURATION = 0.5
 
 
@@ -21,7 +22,7 @@ class CallbackViewController: UIViewController {
     // MARK: - Views
 
 
-    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var nameField: UITextField!
     @IBOutlet var images: [UIImageView]!
 
 
@@ -38,6 +39,7 @@ class CallbackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameField.text = DEFAULT_POKEMON_NAME
         populateUi()
     }
 
@@ -57,14 +59,17 @@ class CallbackViewController: UIViewController {
 
     private func populateUi() {
         getPokemon { [weak self] pokemon in
-            guard let pokemon = pokemon else { return }
-            self?.nameLabel.text = pokemon.name
+            guard let pokemon = pokemon else {
+                self?.invalidPokemon()
+                return
+            }
             self?.getImages(for: pokemon)
         }
     }
 
     private func getPokemon(completion: @escaping (Pokemon?) -> Void) {
-        api.getPokemon(named: POKEMON_NAME) { (pokemon, error) in
+        guard let name = nameField.text else { return }
+        api.getPokemon(named: name) { (pokemon, error) in
             if let error = error {
                 print(error)
             }
@@ -96,17 +101,31 @@ class CallbackViewController: UIViewController {
         }
     }
 
+    private func invalidPokemon() {
+        let textColor = nameField.textColor
+        nameField.textColor = UIColor.red
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + ANIMATION_DURATION) { [weak self] in
+            self?.nameField.textColor = textColor
+        }
+    }
+
 
     // MARK: - Animation
 
 
     private func startAnimation() {
-        animationTask = DispatchWorkItem {
+        animationTask = DispatchWorkItem { [weak self] in
+            guard let self = self else { return }
+
             for i in 0..<4 {
                 self.images[i].isHidden = i != self.animationIdx
             }
-            self.animationIdx += 1
-            self.animationIdx %= 4
+
+            repeat {
+                self.animationIdx += 1
+                self.animationIdx %= 4
+            } while self.animationIdx != 0 && self.images[self.animationIdx].image == nil
+
             if let animationTask = self.animationTask {
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + ANIMATION_DURATION, execute: animationTask)
             }
@@ -121,10 +140,11 @@ class CallbackViewController: UIViewController {
     }
 
 
-    // MARK: - Button
+    // MARK: - Actions
 
 
     @IBAction func onButtonPress() {
+        nameField.resignFirstResponder()
         let red = randomColorValue()
         let green = randomColorValue()
         let blue = randomColorValue()
@@ -133,5 +153,10 @@ class CallbackViewController: UIViewController {
 
     private func randomColorValue() -> CGFloat {
         return CGFloat(Float.random(in: 0 ..< 1))
+    }
+
+    @IBAction func onNameChanged(_ sender: Any) {
+        nameField.resignFirstResponder()
+        populateUi()
     }
 }

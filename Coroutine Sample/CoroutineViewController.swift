@@ -13,7 +13,7 @@ import coswift
 // MARK: Constants
 
 
-private let POKEMON_NAME = "psyduck"
+private let DEFAULT_POKEMON_NAME = "psyduck"
 private let ANIMATION_DURATION = 0.5
 
 
@@ -23,7 +23,7 @@ class CoroutineViewController: UIViewController {
     // MARK: - Views
 
 
-    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var nameField: UITextField!
     @IBOutlet var images: [UIImageView]!
 
 
@@ -39,6 +39,7 @@ class CoroutineViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameField.text = DEFAULT_POKEMON_NAME
         populateUi()
     }
 
@@ -58,14 +59,17 @@ class CoroutineViewController: UIViewController {
 
     private func populateUi() {
         co_launch {
-            guard let pokemon = try self.co_getPokemon() else { return }
-            self.nameLabel.text = pokemon.name
+            guard let pokemon = try self.co_getPokemon() else {
+                try self.co_invalidPokemon()
+                return
+            }
             try self.co_getImages(for: pokemon)
         }
     }
 
     private func co_getPokemon() throws -> Pokemon? {
-        let result = try await(promise: api.co_getPokemon(named: POKEMON_NAME))
+        guard let name = nameField.text else { return nil }
+        let result = try await(promise: api.co_getPokemon(named: name))
         switch result {
         case .fulfilled(let pokemon):
             return pokemon
@@ -93,6 +97,13 @@ class CoroutineViewController: UIViewController {
         }
     }
 
+    private func co_invalidPokemon() throws {
+        let textColor = self.nameField.textColor
+        self.nameField.textColor = UIColor.red
+        try co_delay(ANIMATION_DURATION)
+        self.nameField.textColor = textColor
+    }
+
 
     // MARK: - Animation
 
@@ -104,8 +115,12 @@ class CoroutineViewController: UIViewController {
                 for i in 0..<4 {
                     self.images[i].isHidden = i != idx
                 }
-                idx += 1
-                idx %= 4
+
+                repeat {
+                    idx += 1
+                    idx %= 4
+                } while idx != 0 && self.images[idx].image == nil
+
                 try co_delay(ANIMATION_DURATION)
             }
         }
@@ -117,10 +132,11 @@ class CoroutineViewController: UIViewController {
     }
 
 
-    // MARK: - Button
+    // MARK: - Actions
 
 
     @IBAction func onButtonPress() {
+        nameField.resignFirstResponder()
         let red = randomColorValue()
         let green = randomColorValue()
         let blue = randomColorValue()
@@ -129,5 +145,10 @@ class CoroutineViewController: UIViewController {
 
     private func randomColorValue() -> CGFloat {
         return CGFloat(Float.random(in: 0 ..< 1))
+    }
+
+    @IBAction func onNameChanged(_ sender: Any) {
+        nameField.resignFirstResponder()
+        populateUi()
     }
 }
