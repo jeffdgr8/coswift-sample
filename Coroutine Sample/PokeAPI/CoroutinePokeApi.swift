@@ -16,7 +16,7 @@ class CoroutinePokeApi {
     private let baseUrl = URL(string: "https://pokeapi.co/api/v2/")!
 
     func co_getPokemon(named name: String) -> Promise<Pokemon> {
-        return Promise<Pokemon>(constructor: { (fulfill, reject) in
+        return Promise<Pokemon> { (fulfill, reject) in
             co_launch_onqueue(DispatchQueue.global()) {
 
                 guard let url = URL(string: "pokemon/\(name.lowercased())/", relativeTo: self.baseUrl) else {
@@ -36,7 +36,7 @@ class CoroutinePokeApi {
                     reject(error)
                 }
             }
-        })
+        }
     }
 
     func co_getImage(type: ImageType, for pokemon: Pokemon) -> Promise<UIImage> {
