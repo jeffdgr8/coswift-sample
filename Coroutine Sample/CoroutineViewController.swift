@@ -58,12 +58,12 @@ class CoroutineViewController: UIViewController {
 
 
     private func populateUi() {
-        co_launch {
-            guard let pokemon = try self.co_getPokemon() else {
-                try self.co_invalidPokemon()
+        co_launch { [weak self] in
+            guard let pokemon = try self?.co_getPokemon() else {
+                try self?.co_invalidPokemon()
                 return
             }
-            try self.co_getImages(for: pokemon)
+            try self?.co_getImages(for: pokemon)
         }
     }
 
@@ -109,7 +109,9 @@ class CoroutineViewController: UIViewController {
 
 
     private func startAnimation() {
-        animationCoroutine = co_launch {
+        animationCoroutine = co_launch { [weak self] in
+            guard let self = self else { return }
+
             var idx = 0
             while true {
                 for i in 0..<4 {
