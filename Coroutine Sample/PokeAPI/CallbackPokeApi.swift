@@ -15,69 +15,75 @@ class CallbackPokeApi {
 
     func getPokemon(named name: String, completion: @escaping (Pokemon?, Error?) -> Void) {
 
-        guard let url = URL(string: "pokemon/\(name.lowercased())/", relativeTo: self.baseUrl) else {
-            DispatchQueue.main.async {
-                completion(nil, PokemonError.invalidName("Invalid Pokemon name \(name)"))
+        DispatchQueue.global().async {
+
+            guard let url = URL(string: "pokemon/\(name.lowercased())/", relativeTo: self.baseUrl) else {
+                DispatchQueue.main.async {
+                    completion(nil, PokemonError.invalidName("Invalid Pokemon name \(name)"))
+                }
+                return
             }
-            return
-        }
 
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
 
-            guard data != nil, error == nil else { completion(nil, error); return }
+                guard data != nil, error == nil else { completion(nil, error); return }
 
-            DispatchQueue.global().async {
+                DispatchQueue.global().async {
 
-                do {
-                    let pokemon = try JSONDecoder().decode(Pokemon.self, from: data!)
-                    DispatchQueue.main.async {
-                        completion(pokemon, nil)
-                    }
-                } catch {
-                    DispatchQueue.main.async {
-                        completion(nil, error)
+                    do {
+                        let pokemon = try JSONDecoder().decode(Pokemon.self, from: data!)
+                        DispatchQueue.main.async {
+                            completion(pokemon, nil)
+                        }
+                    } catch {
+                        DispatchQueue.main.async {
+                            completion(nil, error)
+                        }
                     }
                 }
             }
+            task.resume()
         }
-        task.resume()
     }
 
     func getImage(type: ImageType, for pokemon: Pokemon, completion: @escaping (UIImage?, Error?) -> Void) {
 
-        guard let urlString = type.url(for: pokemon) else {
-            DispatchQueue.main.async {
-                completion(nil, PokemonError.noImage("No \(type) image for \(pokemon.name)"))
-            }
-            return
-        }
+        DispatchQueue.global().async {
 
-        guard let url = URL(string: urlString) else {
-            DispatchQueue.main.async {
-                completion(nil, PokemonError.invalidImageUrl("Invalid URL \(urlString) for \(type) image for \(pokemon.name)"))
-            }
-            return
-        }
-
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-
-            guard data != nil, error == nil else { completion(nil, error); return }
-
-            DispatchQueue.global().async {
-
-                let image = UIImage(data: data!)
-
+            guard let urlString = type.url(for: pokemon) else {
                 DispatchQueue.main.async {
+                    completion(nil, PokemonError.noImage("No \(type) image for \(pokemon.name)"))
+                }
+                return
+            }
 
-                    guard let image = image else {
-                        completion(nil, PokemonError.notAnImage("Data not an image at URL \(urlString) for \(type) image for \(pokemon.name)"))
-                        return
+            guard let url = URL(string: urlString) else {
+                DispatchQueue.main.async {
+                    completion(nil, PokemonError.invalidImageUrl("Invalid URL \(urlString) for \(type) image for \(pokemon.name)"))
+                }
+                return
+            }
+
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+
+                guard data != nil, error == nil else { completion(nil, error); return }
+
+                DispatchQueue.global().async {
+
+                    let image = UIImage(data: data!)
+
+                    DispatchQueue.main.async {
+
+                        guard let image = image else {
+                            completion(nil, PokemonError.notAnImage("Data not an image at URL \(urlString) for \(type) image for \(pokemon.name)"))
+                            return
+                        }
+                        completion(image, nil)
                     }
-                    completion(image, nil)
                 }
             }
+            task.resume()
         }
-        task.resume()
     }
 
     enum ImageType {
