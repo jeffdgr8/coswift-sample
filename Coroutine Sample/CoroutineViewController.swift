@@ -113,7 +113,7 @@ class CoroutineViewController: UIViewController {
             guard let self = self else { return }
 
             var idx = 0
-            while true {
+            while Coroutine.isActive() {
                 for i in 0..<4 {
                     self.images[i].isHidden = i != idx
                 }
