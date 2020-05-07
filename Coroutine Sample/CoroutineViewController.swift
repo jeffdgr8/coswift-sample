@@ -58,7 +58,7 @@ class CoroutineViewController: UIViewController {
 
 
     private func populateUi() {
-        co_launch { [weak self] in
+        co_launch(queue: DispatchQueue.main) { [weak self] in
             guard let pokemon = try self?.co_getPokemon() else {
                 try self?.co_invalidPokemon()
                 return
